@@ -1,0 +1,15 @@
+region = "ap-south-1"
+aws_profile = "amaan"
+subnet_tag = "subnet_type"
+image_id = "ami-0dee22c13ea7a9a67"
+vpc_name       = "my-dev-vpc"
+app_name       = "private-instance"
+az = "ap-south-1a"
+environment    = "dev"
+common_tags = {
+  "owner"     = "ahm.amaan@gmail.com"
+  "env"       = "dev"
+  "terraform" = "true"
+  "project"   = "vpc"
+  "purpose"   = "networking"
+}

@@ -1,0 +1,20 @@
+aws_profile      = "amaan"
+region           = "ap-south-1"
+vpc_name         = "my-dev-vpc"
+custom_string    = "laravel-project"
+subnet_tag       = "subnet_type"
+environment      = "dev"
+ami_id           = "ami-0dee22c13ea7a9a67"
+key_name     = "laravel-docker"
+cluster_name = "control-plane"
+az           = "ap-south-1"
+common_tags = {
+  "owner"     = "ahm.amaan@gmail.com"
+  "env"       = "stage"
+  "terraform" = "true"
+  "project"   = "eks"
+  "purpose"   = "compute"
+}
+min_size  = 1
+max_size = 4
+desired_size = 1
